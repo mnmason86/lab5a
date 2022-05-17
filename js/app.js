@@ -9,7 +9,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 function sum(a, b) { //eslint-disable-line
-  return [a + b, `The sum of ${a} and ${b} is ${a + b}.`];
+  return [a+b, `The sum of ${a} and ${b} is ${a + b}.`];
 }
 
 
@@ -82,20 +82,26 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray() { //eslint-disable-line
-  let sum = 0;
-  for(let i = 0; i<testArray.length; i++){
-    sum += testArray[i];
-  }
-  return [sum,`${testArray} was passed in as an array of numbers, and ${sum} is their sum.`];
+function sumArray(sumArr) { //eslint-disable-line
+  let a = sumArr[0];
+  let b = sumArr[1];
+  let c = sumArr [2];
+  // console.log(a,b,c);
+
+  let bc = sum(b,c)[0];
+  // console.log (bc);
+  let abc = sum(a,bc)[0];
+  // console.log (abc);
+
+  return [abc,`${testArray} was passed in as an array of numbers, and ${abc} is their sum.`];
 
 }
 
-//console.log (sumArray());
+console.log (sumArray(testArray));
 
-// Here is the test for sumArray(); uncomment it to run it
+// // Here is the test for sumArray(); uncomment it to run it
 
-//testSumArray(testArray);
+ testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -119,10 +125,10 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 }
 
-console.log (multiplyArray());
+// console.log (multiplyArray());
 
 // Here is the test for multiplyArray(); uncomment it to run it
- testMultiplyArray(testArray);
+//  testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
