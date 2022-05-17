@@ -97,11 +97,11 @@ function sumArray(sumArr) { //eslint-disable-line
 
 }
 
-console.log (sumArray(testArray));
+//console.log (sumArray(testArray));
 
 // // Here is the test for sumArray(); uncomment it to run it
 
- testSumArray(testArray);
+//testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -116,19 +116,23 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+
 function multiplyArray(multArr) { //eslint-disable-line
-  let multiply = 1;
-  for(let i = 0; i<testArray.length; i++){
-    multiply *= testArray[i];
-  }
-  return [multiply,`The numbers ${testArray} have a product of ${multiply}.`];
+  let a = multArr[0];
+  let b = multArr[1];
+  let c = multArr [2];
+
+  let bc = multiply(b,c)[0];
+  let abc = multiply(a,bc)[0];
+
+  return [abc,`The numbers ${testArray} have a product of ${abc}.`];
 
 }
 
-// console.log (multiplyArray());
+//console.log (multiplyArray(testArray));
 
 // Here is the test for multiplyArray(); uncomment it to run it
-//  testMultiplyArray(testArray);
+//testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
